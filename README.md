@@ -3,12 +3,14 @@ SwiftUIとGPT-3を利用したChatGPTのような音声対話アプリです。
 
 <img width="250" src="https://user-images.githubusercontent.com/77086210/218990125-3ddfca76-3f94-4f99-a495-5b8e278ef5d2.gif">
 
+## 記事
+https://qiita.com/district_13_bm/items/c8f4af7ef3065b14780d
+
 ## アプリの仕組み
-アプリの仕組みとしては、
 1. 音声入力をする（`AVAudioEngine`）
-1. 入力データを音声認識でテキスト化する（`SFSpeechRecognizer`）
-1. 認識結果をOpenAIのAPIに渡す
-1. OpenAIのAPIからレスポンスを画面に表示し、読み上げる（`AVSpeechSynthesizer`）
+2. 入力データを音声認識でテキスト化する（`SFSpeechRecognizer`）
+3. 認識結果をOpenAIのAPIに渡す
+4. OpenAIのAPIからレスポンスを画面に表示し、読み上げる（`AVSpeechSynthesizer`）
 
 といった流れで、音声を介してChatGPTのような対話をしているように見せています。
 
