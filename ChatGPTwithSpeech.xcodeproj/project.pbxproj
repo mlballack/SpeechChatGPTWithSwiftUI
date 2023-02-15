@@ -14,6 +14,11 @@
 		C6D74AF5299A086600155F44 /* ChatGPTwithSpeechTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D74AF4299A086600155F44 /* ChatGPTwithSpeechTests.swift */; };
 		C6D74AFF299A086600155F44 /* ChatGPTwithSpeechUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D74AFE299A086600155F44 /* ChatGPTwithSpeechUITests.swift */; };
 		C6D74B01299A086600155F44 /* ChatGPTwithSpeechUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D74B00299A086600155F44 /* ChatGPTwithSpeechUITestsLaunchTests.swift */; };
+		C6D74B0F299A09E200155F44 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = C6D74B0E299A09E200155F44 /* OpenAISwift */; };
+		C6D74B11299A127A00155F44 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D74B10299A127A00155F44 /* SpeechRecognizer.swift */; };
+		C6D74B2F299B6E0300155F44 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D74B2E299B6E0300155F44 /* ViewModel.swift */; };
+		C6D74B32299B810600155F44 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D74B31299B810600155F44 /* AudioRecorder.swift */; };
+		C6D74B34299C805000155F44 /* SpeechSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D74B33299C805000155F44 /* SpeechSynthesizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,10 @@
 		C6D74AFA299A086600155F44 /* ChatGPTwithSpeechUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatGPTwithSpeechUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6D74AFE299A086600155F44 /* ChatGPTwithSpeechUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTwithSpeechUITests.swift; sourceTree = "<group>"; };
 		C6D74B00299A086600155F44 /* ChatGPTwithSpeechUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTwithSpeechUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C6D74B10299A127A00155F44 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		C6D74B2E299B6E0300155F44 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		C6D74B31299B810600155F44 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		C6D74B33299C805000155F44 /* SpeechSynthesizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechSynthesizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6D74B0F299A09E200155F44 /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +106,10 @@
 			children = (
 				C6D74AE3299A085F00155F44 /* ChatGPTwithSpeechApp.swift */,
 				C6D74AE5299A085F00155F44 /* ContentView.swift */,
+				C6D74B2E299B6E0300155F44 /* ViewModel.swift */,
+				C6D74B10299A127A00155F44 /* SpeechRecognizer.swift */,
+				C6D74B33299C805000155F44 /* SpeechSynthesizer.swift */,
+				C6D74B31299B810600155F44 /* AudioRecorder.swift */,
 				C6D74AE7299A086400155F44 /* Assets.xcassets */,
 				C6D74AE9299A086400155F44 /* Preview Content */,
 			);
@@ -143,6 +157,9 @@
 			dependencies = (
 			);
 			name = ChatGPTwithSpeech;
+			packageProductDependencies = (
+				C6D74B0E299A09E200155F44 /* OpenAISwift */,
+			);
 			productName = ChatGPTwithSpeech;
 			productReference = C6D74AE0299A085F00155F44 /* ChatGPTwithSpeech.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +232,9 @@
 				Base,
 			);
 			mainGroup = C6D74AD7299A085F00155F44;
+			packageReferences = (
+				C6D74B0D299A09E200155F44 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			productRefGroup = C6D74AE1299A085F00155F44 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,6 +279,10 @@
 			files = (
 				C6D74AE6299A085F00155F44 /* ContentView.swift in Sources */,
 				C6D74AE4299A085F00155F44 /* ChatGPTwithSpeechApp.swift in Sources */,
+				C6D74B34299C805000155F44 /* SpeechSynthesizer.swift in Sources */,
+				C6D74B2F299B6E0300155F44 /* ViewModel.swift in Sources */,
+				C6D74B11299A127A00155F44 /* SpeechRecognizer.swift in Sources */,
+				C6D74B32299B810600155F44 /* AudioRecorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +369,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -399,7 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -420,6 +444,8 @@
 				DEVELOPMENT_TEAM = D47W8KKUZ3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcritption of your meeting in the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +475,8 @@
 				DEVELOPMENT_TEAM = D47W8KKUZ3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcritption of your meeting in the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -583,6 +611,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C6D74B0D299A09E200155F44 /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C6D74B0E299A09E200155F44 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6D74B0D299A09E200155F44 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C6D74AD8299A085F00155F44 /* Project object */;
 }
