@@ -27,7 +27,6 @@ https://qiita.com/district_13_bm/items/c8f4af7ef3065b14780d
 ##### 【音声録音】
 - [WebSocket + AVAudioEngineを駆使してApple Watchでリアルタイム音声認識してみた](https://amivoice-tech.hatenablog.com/entry/2021/06/14/123000)
 ##### 【音声認識】
-- [WebSocket + AVAudioEngineを駆使してApple Watchでリアルタイム音声認識してみた](https://amivoice-tech.hatenablog.com/entry/2021/06/14/123000)
 - [iOS App Dev Tutorials - Transcribing speech to text](https://developer.apple.com/tutorials/app-dev-training/transcribing-speech-to-text)
 - [【Xcode】【SwiftUi】簡単！音声認識（文字起こし）（リアルタイム）](https://note.com/moss_it/n/n7e30658d3a4e)
 ##### 【音声合成】
