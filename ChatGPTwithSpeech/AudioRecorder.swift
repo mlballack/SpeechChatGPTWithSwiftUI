@@ -2,7 +2,7 @@
 //  AudioRecorder.swift
 //  ChatGPTwithSpeech
 //
-//  Created by 林 政樹 on 2023/02/14.
+//  Created by Massaki Hayashi on 2023/02/14.
 //
 
 import Foundation
